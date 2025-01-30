@@ -22,17 +22,16 @@ The main objectives of this project were:
 
 ## Run the project
 
-Play yourself
+To run the project run the main.py file.
 
-```python3 main.py```
+You can basically switch between 3 different mods by selecting the appropriate agent.
+ 1. Play yourself using the HI agent
+ 2. Let a pretrained model play snake using the AI agent
+ 3. Train your own model using Double Deep Q Learning (DDQN) or Deep Q Learning (DQN)
 
-Train your own model using double deep q-learning (visualized)
-
-```python3 train_ddqn.py```
-
-See how pretrained dqn agent plays the game
-
-```python3 run_trained_dqn.py```
+```bash
+python3 main.py [-h] [-e ENVIRONMENT] [-n NETWORK] [-m MODEL] [-a AGENT] [-v VISUAL] [-r EPISODES]
+```
 
 ## Neural Network Architecture
 The neural network used in both DQN and DDQN consists of
@@ -78,7 +77,7 @@ Reward System:
 | **`eps_end: float`** | Minimum exploration rate. Default: `0.001`. |
 | **`decay_rate: int`** | Controls the decay of the exploration rate over time. Default: `1000`. |
 
-Results:
+#### Results:
 
 ![alt text](./trained_models/DQN/DQN_v1.2.png)
 
@@ -103,7 +102,7 @@ An analysis of the average performance shows that learning has not yet stagnated
 | **`eps_end: float`** | Minimum exploration rate. Default: `0.001`. |
 | **`decay_rate: int`** | Determines how fast `epsilon` decays, reducing exploration over time. Default: `1000`. |
 
-Results:
+#### Results:
 
 ![alt text](./trained_models/DoubleDQN/Double_DQN_v2.1.png)
 
