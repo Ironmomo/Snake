@@ -1,4 +1,4 @@
-from Environment.Environment import Environment, Direction
+from Environment.AbstractEnvironment import Environment, Direction
 from Agent.Abstract_Agent import Agent
 import pygame
 from pygame.locals import *

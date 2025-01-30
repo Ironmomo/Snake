@@ -1,4 +1,4 @@
-from Environment.Environment import Environment
+from Environment.AbstractEnvironment import Environment
 import pygame
 from pygame.locals import *
 
